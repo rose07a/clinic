@@ -1,0 +1,745 @@
+* {
+	margin: 0 auto;
+	padding:0;
+	box-sizing: border-box;
+}
+
+html {
+	font: normal 16px sans-serif;
+}
+
+hr{
+	width: 50%;
+	margin: 30px auto;
+}
+
+ul,
+nav {
+	list-style: none;
+}
+
+a { 
+	color: #fff;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+a:hover {
+	opacity: 1;
+}
+
+h1{
+	font-size: 35px;
+	margin-bottom: :20px;
+	word-break: break-all;
+}
+
+.big{
+	font-size:50px;
+	word-break: break-all;
+	margin: 10px;
+}
+
+h2{
+	font-size: 25px;
+	margin: 10px;
+}
+
+h3{
+	font-size: 20px;
+	margin: 10px;
+}
+
+p{
+	font-size:17px;
+	line-height: 2;
+}
+
+i{
+	font-size:30px;
+
+}
+
+
+
+.btn{
+	width:300px;
+	height:40px;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	align-items :center;
+	background-color:  #F97F51;
+	opacity: 1;
+	margin:10px;
+}
+
+.button{
+	width:300px;
+	height:40px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	align-items:center;
+	background-color:  #F97F51;
+	opacity: 1;
+	padding: 10px 30px;
+	margin:5px;
+	margin-right: 50px;
+}
+
+
+
+/*first***********************************************************/
+
+
+.first{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width:100%;
+	align-items: center;
+	height:160px;
+	margin: 5px 0;
+}
+
+.first img{
+	width:250px;
+}
+
+.first .button{
+	width:300px;
+	height:40px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	align-items:center;
+	background-color:  #F97F51;
+	opacity: 1;
+	padding: 10px 30px;
+	margin:5px;
+	margin-right: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .first{
+  	height:280px;
+  	flex-direction: column;
+  	justify-content: center;
+  	text-align: center;
+  }
+
+  .first img{
+	width:250px;
+}
+  .flex a{
+  	flex-basis: 100%;
+  }
+
+  .first .button{
+	width:90%;
+	margin: 5px auto;
+ }
+  
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+
+
+/*nav***********************************************************/
+
+header{
+    position:absolute;
+	z-index: 10;
+	width:100%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #4DAFC6;
+  overflow: hidden;
+  
+}
+
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #4DAFC6;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  margin-left: 150px;
+  overflow: hidden;
+}
+
+
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4DAFC6;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #4DAFC6;
+  color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #4DAFC6;
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {
+  	float: none;
+  }
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/*Slideshow***********************************************************/
+
+.slidescolor{
+	background-color: #182624;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  position:relative;
+}
+
+.container{
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block{
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  text-align: center;
+  align-items: center;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #182624;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top:50%;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #182624;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #182624;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*hero-image***********************************************************/
+.hero {
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	min-height: 100vh;
+	color: #fff;
+}
+
+.hero .background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	z-index: -1;
+
+}
+
+.hero h1 {
+	font: bold 60px "Open Sans", sans-serif;
+	margin-bottom: 15px;
+}
+
+.hero h3 {
+	font: normal 28px "Open Sans", sans-serif;
+	margin-bottom: 40px;
+}
+
+.hero a.btn {
+	padding: 20px 46px;
+}
+
+.hero-content-area {
+
+	opacity: 0;
+	margin-top: 130px;
+	animation: 1s slidefade 1s forwards;
+	background-color: #000 0.5;
+	z-index: 2;
+}
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.hero {
+		min-height: 600px;
+	}
+
+	.hero h1 {
+		font-size: 48px;
+	}
+
+	.hero h3 {
+		font-size: 24px;
+	}
+
+	.hero a.btn {
+		padding: 15px 40px;
+	}
+}
+
+/*contents***********************************************************/
+
+.contents{
+     width:100%;
+     margin: 60px 0;
+     text-align: center;
+}
+
+
+
+/*band***********************************************************/
+
+
+.band img{
+  width:100%;
+  height: 350px;
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: #000, 0.8;
+
+  /* Set a specific height */
+  
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.5);
+}
+
+/* Place text in the middle of the image */
+.band-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.band-text .button{
+	text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .band img{
+    height: 400px;
+  }
+
+  .band-text{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*first2***********************************************************/
+
+.first2{
+  background-image: url(../img/heart.jpg);
+  background: no-repeat auto;
+  width:100%;
+  height:400px;
+  text-align:center;
+  position:relative;
+}
+
+.first2 h1{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width: 80%;
+  font-size:100px;
+  color:#fff;
+  border:10px white solid;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1100px) {
+  .first2 h1{
+  	font-size: 50px;
+  }
+}
+
+
+
+/*Faqs***********************************************************/
+
+.accordion {
+  background-color: #182624;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #4DAFC6;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+.placetext{
+	display: flex;
+	flex-direction: row;
+	margin: 30px 0;
+	flex-wrap: wrap;
+}
+
+.placetext .container {
+  flex-basis: 30%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.placetext .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.placetext img{
+	width:100%;
+	height: 300px;
+	background: border-box cover;
+    filter: brightness(0.5);
+    border-radius: 10%;
+}
+
+.placetext img:hover{
+	filter: grayscale(0%);
+}
+
+@media (max-width: 800px) {
+	.placetext{
+		flex-direction: column;
+	}
+
+	.placetext .container {
+        flex-basis: 100%;
+    }
+
+    .placetext img{
+    	margin:10px 0;
+    }
+}
+
+/*treatments grid***********************************************************/
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin:20px 0;
+  text-align: center;
+  align-items: center;
+}
+
+
+.column {
+  flex-basis: 20%;
+  text-align: center;
+}
+
+
+.row img{
+	width:100%;
+	height:200px;
+	filter: brightness(0.7);
+}
+
+@media screen and (max-width: 1100px) {
+  .column {
+  	margin:10px;
+  	flex-basis: 48%;
+  }
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .column {
+  	margin:10px ;
+  	flex-basis: 100%;
+  }
+}
+
+
+/*footer***************************************************************/
+
+footer{
+	text-align:center;
+	background-color: #182624;
+}
+
+.footergrid{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+    background-color: #182624;
+	color: #fff;
+	padding: 10px 0;
+}
+
+.footergrid div{
+	flex-basis: 30%;
+	background-color: #182624;
+}
+
+footer li {
+	text-align: center;
+	padding:10px;
+}
+
+footer i {
+   font-size:30px;
+   color:#F97F51;
+}
+
+footer p {
+	padding: 20px;
+	color: #fff;
+}
+
+footer span{
+	margin-right: 50px;
+}
+
+footer .right{
+ float:right;
+}
+
+footer hr{
+	margin: 10px auto;
+	width:90%;
+}
+
+@media (max-width: 800px) {
+	.footergrid {
+		flex-direction: column;
+	}
+
+	footer p {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	footer li {
+		margin: 0 5px;
+	}
+} 
+
+
