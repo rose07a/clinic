@@ -1367,6 +1367,10 @@ a.tele{
   .resources .two{
   	flex-basis: 100%;
   }
+  
+  .resources iframe{
+  	width:100%;
+  }
 
   .resources img{
   	width:100%;
