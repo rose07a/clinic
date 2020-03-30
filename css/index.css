@@ -31,14 +31,14 @@ a:hover {
 }
 
 h1{
-	font-size: 35px;
+	font-size: 32px;
 	margin: 30px;
 	text-transform: capitalize;
 	word-break: break-all;
 }
 
 .h1{
-	font-size: 35px;
+	font-size: 32px;
 	margin: 30px;
 	text-transform: capitalize;
 	word-break: break-all;
@@ -61,6 +61,7 @@ h3{
 	text-transform: capitalize;
 	font-size: 20px;
 	margin: 10px;
+	line-height: 2;
 }
 
 hr{
@@ -70,6 +71,7 @@ hr{
 p{
 	font-size:17px;
 	line-height: 2;
+	padding-left: 7px;
 }
 
 i{
@@ -82,8 +84,21 @@ li i{
 
 li{
 	margin:7px;
+	line-height: 1.5;
 }
 
+.left{
+	text-align: left;
+	margin-left:0;
+}
+
+.justleft{
+	text-align:left;
+}
+
+.lightgreen{
+	background:#CDFAD4;
+}
 
 .button{
 	width:250px;
@@ -513,7 +528,7 @@ header{
 .slidescolor{
 	width:100%;
 	background-color: #5CB878;
-	height:550px;
+	height:590px;
 	align-items: center;
 }
 
@@ -521,7 +536,7 @@ header{
 	width:100%;
 	height:550px;
 	background-position: center center;
-	background-size:cover;
+	background-size:contain;
 }
 
 /* Slideshow container */
@@ -582,7 +597,7 @@ div.text3{
   color: #f2f2f2;
   padding: 15px 10px;
   position: absolute;
-  top:60%;
+  top:20%;
   left:30%;
   width: 600px;
   text-align: center;
@@ -684,13 +699,13 @@ div.text3{
 
 
 @media screen and (max-width: 800px) {
-   div.text1{
+   div.text1, div.text3{
    	width:300px;
    	top:25%;
    	left:15%;
    }
 
-   div.text2, div.text3{
+   div.text2{
    	width: 300px;
    	top:25%;
    	left:15%;
@@ -885,57 +900,7 @@ div.text3{
 }
 
 
-/*contents***********************************************************/
 
-.contents{
-     width:100%;
-     margin:40px auto;
-     text-align: center;
-}
-
-.grid-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin:20px 0;
-  text-align: center;
-  align-items: center;
-  -webkit-animation-name: fadeInUp;
-  animation: fadeInUp 2s;
-}
-
-.contents i{
-  font-size: 40px;
-  color:#5CB878;
-}
-
-
-.grid-column{
-  flex-basis: 20%;
-  text-align: center;
-  padding: 5px;
-  flex-wrap: wrap;
-  }
-
-.grid-row img{
-	width:100%;
-	height:230px;
-	filter: brightness(0.7);
-}
-
-@media screen and (max-width: 1100px) {
-  .grid-column {
-  	margin:10px;
-  	flex-basis: 47%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .grid-column {
-  	margin:10px;
-  	flex-basis: 100%;
-  }
-}
 
 
 /*band***********************************************************/
@@ -1071,12 +1036,19 @@ div.text3{
 
 .contact .location .seg{
 	margin: 30px;
+	padding-left:100px;
+	text-align:left;
 }
 
 @media screen and (max-width: 800px) {
   .contact{
   	flex-direction: column;
   }
+  .contact .location .seg{
+	margin: 30px;
+	padding-left:0;
+	text-align: left;
+}
 
   .contact .map{
 	flex-basis: 98%;
@@ -1085,7 +1057,7 @@ div.text3{
 .contact .location{
     flex-basis: 98%;
 }
-	
+
 .map iframe{
 	width:100%;
 }
@@ -1096,14 +1068,27 @@ div.text3{
 
 .patient{
 	width: 70%;
+	text-align: left;
 }
+
+.patient h1{
+	text-align:left;
+	margin-left:0;
+}
+
+.patient h2{
+	text-align:left;
+	margin-left:0;
+}
+
+.patient h3{
+	text-align:left;
+	margin-left:0;
+}
+
 
 .patient a{
 	color:#000;
-}
-
-.patient .left{
- text-align: left;
 }
 
 .patient li{
@@ -1120,7 +1105,7 @@ div.text3{
 
 a.tele{
 	width:80%;
-	height:60px;
+	height:auto;
 	text-transform: uppercase;
 	font-size: 20px;
 	font-weight: bold;
@@ -1130,7 +1115,6 @@ a.tele{
 	color: #fff;
 	opacity: 1;
 	padding: 10px 30px;
-	margin:5px;
 }
 
 .download{
@@ -1155,16 +1139,16 @@ a.tele{
 	.patient{
 	 width: 95%;
 	}
-	
+
 	a.tele{
-		height:90px;
+		height:200px;
+		font-size:18px;
 	}
 }
 
 /*Faqs***********************************************************/
 
 .faqs{
-	text-align:center;
 	margin-bottom: 150px;
 }
 
@@ -1219,6 +1203,10 @@ a.tele{
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.panel i{
+	font-size: 16px;
 }
 
 /*placetext****************************************************************/
@@ -1375,7 +1363,7 @@ a.tele{
   .resources .two{
   	flex-basis: 100%;
   }
-  
+
   .resources iframe{
   	width:100%;
   }
@@ -1386,13 +1374,16 @@ a.tele{
 
 }
 
+/*Gallery***************************************************************/
+
+
 
 /*footer***************************************************************/
 
 footer{
 	padding:0;
 	margin:0 auto;
-	text-align:center;
+	text-align: center;
 	background-color: #0E241F;
 }
 
@@ -1451,6 +1442,10 @@ footer hr{
 		flex-direction: column;
 	}
 
+	footer li{
+		margin-left:0;
+	}
+
 	footer p {
 		text-align: center;
 		margin-bottom: 20px;
@@ -1460,11 +1455,15 @@ footer hr{
 		margin-bottom: 20px;
 	}
 
+	.lileft{
+		text-align:left;
+		margin-left:30px;
+	}
+
 	.footergrid li{
 		text-align: left;
 		margin-left: 0;
 	    padding:10px;
 	}
 } 
-
 
