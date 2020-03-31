@@ -1114,7 +1114,7 @@ a.tele{
 	background-color: #5CB878;
 	color: #fff;
 	opacity: 1;
-	padding: 10px 30px;
+	padding: 10px 10px;
 }
 
 .download{
@@ -1141,7 +1141,6 @@ a.tele{
 	}
 
 	a.tele{
-		width:90%;
 		font-size:18px;
 	}
 }
