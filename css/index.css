@@ -968,6 +968,10 @@ header{
     font-size: 10px;
 }
 
+.patient div{
+	padding:30px;
+}
+
 
 a.tele{
 	width:80%;
