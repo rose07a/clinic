@@ -556,17 +556,16 @@ header{
 	padding: 20px 46px;
 }
 
-.hero2 .hero-content-area{
+.hero2 .hero-content-area {
 	position:absolute;
 	top:20%;
 	left:30%;
 	padding:15px;
 	opacity: 0;
 	width: 600px;
-	/*margin-top: 50px;*/
 	animation: 1s slidefade 1s forwards;
 	background: rgba(182, 225, 252, 1);
-    color: #000;
+        color: #000;
 	z-index: 2;
 }
 
