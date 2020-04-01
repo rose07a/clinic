@@ -955,7 +955,9 @@ header{
 	margin-left:0;
 }
 
-
+.patient div{
+	padding:30px;
+}
 .patient a{
 	color:#000;
 }
@@ -967,11 +969,6 @@ header{
 .patient i{
     font-size: 10px;
 }
-
-.patient div{
-	padding:30px;
-}
-
 
 a.tele{
 	width:80%;
