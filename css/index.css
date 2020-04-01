@@ -97,7 +97,7 @@ li{
 }
 
 .lightgreen{
-	background:#b6e1fc;
+	background:#F0F8FF;
 }
 
 .button{
@@ -564,7 +564,7 @@ header{
 	opacity: 0;
 	width: 600px;
 	animation: 1s slidefade 1s forwards;
-	background: rgba(182, 225, 252, 1);
+	background: rgba(182, 225, 252, 0.5);
         color: #000;
 	z-index: 2;
 }
