@@ -8,6 +8,7 @@
 	<script src="https://kit.fontawesome.com/56d2ddccc3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
 	<div class="verytop" id="toptop">
 
 		<div class="topnav2" id="myTopnav2">
@@ -147,41 +148,15 @@
 	 </header>
 
 
-    <section class="slidescolor">   
+    <section class="hero2">
+     <div class="background-image" style="background-image: url(./img/old1.jpg);"></div>
 
- 	 <div class="slideshow-container">
-  <!-- Full-width images with number and caption text -->
-
-	  <div class="mySlides fade">
-	     <img src="img/yoga.jpg" >
-	     <div class="text1">
-	     	<h1>3 Slides (Animation)</h1>
-	     	<h3> Welcome to the website Welcome to the website</h3>
-	     	<a href="about.html" class="contentbutton">ABOUT US</a>
-	     </div>
-      </div>
-
-     <div class="mySlides fade">
-       <img src="img/senior2.jpg" >
-       <div class="text2">
-       	<h1>3 Slides (Animation)</h1>
-	    <h3> Welcome to the website Welcome to the website</h3>
-       	<a href="treatments.html"class="contentbutton">TREATMENTS</a>
-       </div>
+     <div class="hero-content-area">
+       <h3 class="green">WELCOME</h3>
+       <p>WELCOME WELCOME WELCOME</p><br><br>
+       <a href="about.html" class="butto">About Us</a>
      </div>
-
-     <div class="mySlides fade">
-       <img src="img/old1.jpg" >
-       <div class="text3">
-        <h1>3 Slides (Animation)</h1>
-	    <h3> Welcome to the website Welcome to the website</h3>
-       	<a href="faqs.html" class="contentbutton">FAQs</a>
-       </div>
-     </div>
-
-   </div>   
-
- </section>
+  </section>
 
 
   <section class="contents">
@@ -190,17 +165,6 @@
   	<hr>
   	<h2>Welcome message</h2>
   	<h3>Welcome paragraph</h3>
-
-  </section>
-
-
-  <section class="hero">
-     <div class="background-image" style="background-image: url(./img/stone.jpg);"></div>
-
-     <div class="hero-content-area">
-       <img class="pulse" src="logo/clear-white-long.png" alt="Mountain" width="400px" height="auto">
-       <h3 class="green">We look forward to navigating chronic pain with you.</h3>
-     </div>
 
   </section>
 
@@ -214,8 +178,17 @@
    	 </div>
    </section>
 
+   <section class="hero">
+     <div class="background-image" style="background-image: url(./img/stone.jpg);"></div>
 
-    <section class="placetext lightgreen">
+     <div class="hero-content-area">
+       <img class="pulse" src="logo/clear-white-long.png" alt="Mountain" width="400px" height="auto">
+       <h3 class="green">We look forward to navigating chronic pain with you.</h3>
+     </div>
+
+  </section>
+
+    <section class="placetext">
 
       <a href="about.html#professional">
       	<div class="container">
@@ -237,11 +210,6 @@
          <div class="centered"><a href="contact.html#contact">Our Office</a></div>
        </div>
       </a>	
-    </section>
-
-    <section>
-    	<img src="">
-    	<img src="">
     </section>
 
     <section class="nopadding">
@@ -334,23 +302,6 @@
       }
     </script>
 
-    <script type="text/javascript">
-    	var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; 
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1} 
-  slides[slideIndex-1].style.display = "block"; 
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
-}
-</script>
-
 <script>
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 window.onscroll = function() {scrollFunction()};
@@ -363,6 +314,8 @@ function scrollFunction() {
   }
 }
 </script>
+
+ 
 
 </body>
 </html>
