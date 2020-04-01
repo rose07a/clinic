@@ -97,7 +97,7 @@ li{
 }
 
 .lightgreen{
-	background:#CDFAD4;
+	background:#b6e1fc;
 }
 
 .button{
@@ -710,24 +710,10 @@ header{
 }
 
 .half{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 40px auto;
+	width:70%;
+	text-align: left;
 }
 
-.half img{
-	    border-radius: 10px;
-    }
-
-
-.half .one{
-	flex-basis: 48%;
-}
-
-.half .two{
-    flex-basis: 48%;
-}
 
 .staff{
 	display: flex;
@@ -983,9 +969,6 @@ header{
     font-size: 10px;
 }
 
-.circle li{
-	list-style:circle;
-}
 
 a.tele{
 	width:80%;
@@ -1003,7 +986,7 @@ a.tele{
 
 .download{
 	padding:15px;
-	border: solid 3px #5CB878;
+	border: solid 3px #043e62;
 }
 
 .download li{
@@ -1183,7 +1166,6 @@ a.tele{
 	text-align: left;
 	margin-left: 50px;
 	margin-bottom: 11px;
-	list-style: circle;
 }
 
 
@@ -1349,3 +1331,4 @@ footer hr{
 	    padding:10px;
 	}
 } 
+
